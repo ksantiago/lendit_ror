@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LenditRor</title>
+  <title>LendIt - The Peer-to-Peer Online Lending Conference</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "LendIt - Peer-to-Peer Online Lending Conference" %>">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Ruby,Rails">
+  <meta name="author" content="LendIt / Katherine Santiago">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!-- jquery UI css -->
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+  <!-- No index, no follow for staging -->
+  <!-- Comment out for production -->
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+ <!-- Insert Google Analytics -->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <%= render 'layouts/nav' %>
+  </header>
 
 <%= yield %>
 
