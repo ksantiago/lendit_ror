@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @speaker.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @speaker.last_name %>
+</p>
+
+<p>
+  <strong>Suffix:</strong>
+  <%= @speaker.suffix %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @speaker.company_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @speaker.title %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @speaker.bio %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @speaker.img %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @speaker.twitter %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @speaker.email %>
+</p>
+
+<%= link_to 'Edit', edit_speaker_path(@speaker) %> |
+<%= link_to 'Back', speakers_path %>

@@ -1,5 +1,7 @@
 LenditRor::Application.routes.draw do
 
+  resources :speakers
+
   resources :sponsors
 
   get '/welcome/index', to: 'welcome#index'
