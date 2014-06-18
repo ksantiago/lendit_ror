@@ -1,8 +1,14 @@
 LenditRor::Application.routes.draw do
 
+  resources :events
+
+  resources :venues
+
   resources :speakers
 
   resources :sponsors
+
+  resources :videos
 
   get '/welcome/index', to: 'welcome#index'
   root 'welcome#index'
