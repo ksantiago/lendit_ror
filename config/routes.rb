@@ -1,5 +1,7 @@
 LenditRor::Application.routes.draw do
 
+  resources :conferences
+
   resources :events
 
   resources :venues
